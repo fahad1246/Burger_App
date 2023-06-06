@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Burger Shop</string>
+    <string name="enter_name">Enter name for order.</string>
+    <string name="burger_logo">Burger_Logo</string>
+    <string name="chicken_burger">Chicken Burger $5</string>
+    <string name="beef_burger">Beef Burger $5</string>
+    <string name="dine_in">Dine In</string>
+    <string name="carry_out">Carry out</string>
+    <string name="napkin">Extra Napkins</string>
+    <string name="total">Total</string>
+    <string name="reset">Reset</string>
+    <string name="textview1">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="textview4">TextView</string>
+    <string name="textview5">TextView</string>
+    <string name="textview6">TextView</string>
+    <string name="textview7">TextView</string>
+    <string name="textview8">TextView</string>
+    <string name="textview9">TextView</string>
+    <string name="name_on_order">Name on order:</string>
+    <string name="tax_info">Total = Burger + Tax ($1)</string>
+    <string name="enter_special_request">Enter Special Request</string>
+    <string name="special_request_is">Special Request is:</string>
+    <string name="burger_rarity_level">Burger Rarity: </string>
+    <string name="logo">logo</string>
+    <string name="cheese">Cheese</string>
+    <string name="no_cheese">No Cheese</string>
+    <string name="enter_name_to_see_order">Enter name for Order</string>
+    <string name="search_for_order">search for order</string>
+    <string-array name="spice">
+        <item>Spice Level</item>
+        <item>Extra Hot</item>
+        <item>Hot</item>
+        <item>mild</item>
+    </string-array>
+    <string-array name="level">
+        <item>Burger Rarity</item>
+        <item>Rare</item>
+        <item>Medium Rare</item>
+        <item>Well Done</item>
+    </string-array>
+</resources>

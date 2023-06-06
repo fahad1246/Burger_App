@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fahad Mohammed
+     Project Final
+     June 8th, 2022-->
+
+<!-- Set up Scroll View-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Set up constraint layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/confirmation_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ConfirmationActivity">
+
+        <!-- Set up Image View-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="371dp"
+            android:layout_height="459dp"
+            android:contentDescription="@string/burger_logo"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bg3"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="casual"
+            android:hint="@string/name_on_order"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_level"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview1"
+            android:hint="@string/burger_rarity_level"
+            android:textColor="@color/orange"
+            android:textColorHint="#78909C"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_chickenBurger"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview2"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_level" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_spice"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview3"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_chickenBurger" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_cheese"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview4"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_spice" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_napkins"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview5"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cheese" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_dineIn"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview6"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_napkins" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_orderTotal"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview7"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dineIn" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/txt_request"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:text="@string/textview8"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_orderTotal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

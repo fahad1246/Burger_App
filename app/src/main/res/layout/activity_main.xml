@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fahad Mohammed
+     Project Final
+     June 8th, 2022-->
+
+<!-- Set up Scroll View-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Set up constraint layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!-- Set up Image View-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="596dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bg1"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Set up Edit Text-->
+        <EditText
+            android:id="@+id/ord_name"
+            android:layout_width="230dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="name_for_order"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="@string/enter_name"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="162dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="572dp"
+            android:text="@string/tax_info"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Set up Text View-->
+        <TextView
+            android:id="@+id/orderTotal"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="572dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Set up Spinner-->
+        <Spinner
+            android:id="@+id/spn_meatlevel"
+            android:layout_width="229dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:entries="@array/level"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ord_name" />
+
+        <!-- Set up Radio Group-->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_meatlevel">
+
+            <!-- Set up Radio Button-->
+            <RadioButton
+                android:id="@+id/chicken_burger"
+                android:layout_width="151dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/chicken_burger" />
+
+            <!-- Set up Radio Button-->
+            <RadioButton
+                android:id="@+id/beef_burger"
+                android:layout_width="151dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/beef_burger" />
+        </RadioGroup>
+
+        <!-- Set up Spinner-->
+        <Spinner
+            android:id="@+id/spn_spicelevel"
+            android:layout_width="173dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:entries="@array/spice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <!-- Set up Radio Group-->
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_spicelevel">
+
+            <!-- Set up Radio Button-->
+            <RadioButton
+                android:id="@+id/cheese"
+                android:layout_width="151dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/cheese" />
+
+            <!-- Set up Radio Button-->
+            <RadioButton
+                android:id="@+id/no_cheese"
+                android:layout_width="151dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/no_cheese" />
+        </RadioGroup>
+
+        <!-- Set up CheckBox-->
+        <CheckBox
+            android:id="@+id/chk_dinein"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:text="@string/dine_in"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+        <!-- Set up CheckBox-->
+        <CheckBox
+            android:id="@+id/chk_carryout"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:text="@string/carry_out"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk_dinein" />
+
+        <!-- Set up CheckBox-->
+        <CheckBox
+            android:id="@+id/chk_napkins"
+            android:layout_width="123dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/napkin"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chk_carryout" />
+
+        <!-- Set up Edit Text-->
+        <EditText
+            android:id="@+id/sp_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="Special_Request_for_order"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="@string/enter_special_request"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#ED4915"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk_napkins" />
+
+        <!-- Set up Button-->
+        <Button
+            android:id="@+id/btn_total"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F87147"
+            android:onClick="itemTotal"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_request" />
+
+        <!-- Set up Button-->
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F87147"
+            android:onClick="onClickReset"
+            android:text="@string/reset"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_request" />
+
+        <!-- Set up Edit Text-->
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="216dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="First Name for Order"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="@string/enter_name_to_see_order"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#ED4915"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+        <!-- Set up Button-->
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="140dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F87147"
+            android:onClick="searchOrder"
+            android:text="@string/search_for_order"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reset"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
